@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery | When phone is Off</title>
+    <style>
+        body{
+            background-color: #bcc3d6;
+            position: relative;
+            height: 100vh;
+        }
+        .screen{
+            width: 300px;
+            height: 500px;
+            background-color: #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+
+        .battery{
+            /* background-color: #fff; */
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+        .case{
+            width: 120px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            border: 2px solid gray;
+            background: transparent;
+            padding: 3px;
+        }
+        .head{
+            width: .001rem;
+            height: 15px;
+            position: absolute;
+            top: 50%;
+            left: 95%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px 40px 40px 10px ;
+            border: 2px solid gray;
+            background-color: gray;
+            padding: 3px;
+        }
+
+        .red{
+            background-color: red;
+            width: 10px;
+            height: 100%;
+            border-radius: 50px 10px 10px 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <section class="battery">
+            <span class="case">
+                <div class="red"></div>
+            </span>
+            <span class="head"></span>
+        </section>
+    </div>
+</body>
+</html>
